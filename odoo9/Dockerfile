@@ -21,7 +21,7 @@ VOLUME ["/home/odoo"]
 # Expose HTTP port, and longpolling port
 EXPOSE 8069 8072
 
-#RUN chown -R odoo /var/lib/odoo 
+RUN chown -R odoo /var/lib/odoo 
 ENV HOME $ODOO_HOME
 
 USER odoo
