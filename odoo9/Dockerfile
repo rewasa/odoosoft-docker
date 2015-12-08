@@ -15,6 +15,8 @@ RUN pip install -e /opt/odoo
 
 RUN adduser --system --uid=1000 --home /home/odoo --shell /bin/bash odoo
 
+RUN chmod +x /opt/odoo/entrypoint.sh
+
 # Declare volumes for data
 VOLUME ["/home/odoo"]
 
